@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NutriCare Kids</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+body {
+
+  font-family: 'Cairo', sans-serif;
+
+  background: #fffaf2;
+
+  color: #355849;
+
+}
+
+nav {
+
+  background: white;
+
+  padding: 18px 6%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  box-shadow: 0 3px 15px #00000008;
+
+}
+
+.logo {
+
+  font-size: 23px;
+
+  font-weight: 800;
+
+  color: #39866b;
+
+}
+
+nav button {
+
+  border: none;
+
+  background: #e6f3e8;
+
+  color: #285b49;
+
+  padding: 10px 17px;
+
+  border-radius: 25px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+.hero {
+
+  padding: 65px 8%;
+
+  min-height: 430px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  background: linear-gradient(120deg,#fff0d9,#eaf6e8);
+
+}
+
+.hero-text {
+
+  max-width: 550px;
+
+}
+
+.hero h1 {
+
+  font-size: 45px;
+
+  line-height: 1.5;
+
+  margin: 20px 0;
+
+  color: #285b49;
+
+}
+
+.hero h1 span {
+
+  color: #e99a54;
+
+}
+
+.hero p {
+
+  line-height: 2;
+
+  color: #718477;
+
+  margin-bottom: 25px;
+
+}
+
+.main-button {
+
+  background: #39866b;
+
+  color: white;
+
+  border: none;
+
+  padding: 14px 25px;
+
+  border-radius: 13px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+}
+
+.hero-image {
+
+  font-size: 125px;
+
+  background: white;
+
+  border-radius: 50%;
+
+  width: 250px;
+
+  height: 250px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow: 0 15px 35px #00000010;
+
+}
+
+.section {
+
+  padding: 60px 7%;
+
+}
+
+.section-title {
+
+  text-align: center;
+
+  margin-bottom: 30px;
+
+}
+
+.section-title h2 {
+
+  font-size: 29px;
+
+  color: #285b49;
+
+}
+
+.section-title p {
+
+  color: #87938a;
+
+  margin-top: 10px;
+
+}
+
+@media(max-width:650px) {
+
+  .hero {
+
+    flex-direction: column;
+
+    text-align: center;
+
+  }
+
+  .hero h1 {
+
+    font-size: 34px;
+
+  }
+
+  .hero-image {
+
+    width: 190px;
+
+    height: 190px;
+
+    font-size: 95px;
+
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+  <div class="logo">🍓 NutriCare Kids</div>
+
+  <button onclick="alert('Welcome to NutriCare Kids!')">
+
+    Welcome 🌱
+
+  </button>
+
+</nav>
+
+<header class="hero">
+
+  <div class="hero-text">
+
+    <h1>
+
+      نكبر بصحة،<br>
+
+      ونتغذى <span>بسعادة!</span>
+
+    </h1>
+
+    <p>
+
+      اكتشفوا عالم التغذية الصحية للأطفال.
+
+      معلومات مبسطة للأهل، ونصائح تساعد أطفالنا
+
+      على النمو بصحة وسعادة.
+
+    </p>
+
+    <button class="main-button"
+
+      onclick="document.getElementById('problems').scrollIntoView({behavior:'smooth'})">
+
+      اكتشفوا مشاكل التغذية ←
+
+    </button>
+
+  </div>
+
+  <div class="hero-image">
+
+    🍎🥑
+
+  </div>
+
+</header>
+
+<section class="section" id="problems">
+
+  <div class="section-title">
+
+    <h2>🍏 عالم مشاكل التغذية</h2>
+
+    <p>المعرفة أول خطوة نحو طفل أكثر صحة</p>
+
+  </div>
+
+  <!-- سنضيف بطاقات مشاكل التغذية في الجزء الثاني -->
+
+</section>
+
+</body>
+
+</html>
